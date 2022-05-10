@@ -1,0 +1,158 @@
+/* custom properties */
+:root {
+	--orange: hsl(17, 54%, 89%);
+	/*--purple: #b17fad;*/
+	--purple-light: hsl(308, 45%, 82%);
+	--purple-dark: hsl(305, 31%, 54%);
+	--white: hsl(0, 0%, 100%);
+	--blue: hsl(205, 100%, 23%);
+	--blue-light: hsl(231, 58%, 65%);
+}
+
+body {
+	background-color: var(--orange);
+	font-family: 'Nunito';
+	font-weight: 200;
+}
+
+h2,
+h3 {
+	color: var(--blue);
+	font-weight: inherit;
+}
+
+p {
+	font-size: 1.25rem;
+	font-size: clamp(1.2rem, 0.4rem + 1.6vw, 1.6rem);
+	line-height: 2rem;
+	color: var(--purple-dark);
+}
+
+:is(.navbar-brand, .nav-link, .footer__social--link) {
+	transition: color 300ms ease-in-out;
+}
+
+a:focus-visible {
+	outline: 2px solid var(--blue);
+}
+
+/* get rid of mb on last children */
+* > :last-child {
+	margin-bottom: 0;
+}
+
+::selection {
+	background-color: var(--purple-dark);
+	color: var(--white);
+}
+
+/*~ HEADER */
+#mainNav :is(.navbar-brand, .nav-link) {
+	font-size: 1.5rem;
+	color: var(--white);
+}
+
+#mainNav .navbar-brand {
+	color: var(--blue);
+	letter-spacing: 0.1em;
+}
+
+#mainNav .nav-link:is(:hover, :focus, :focus-visible) {
+	color: var(--blue-light);
+}
+
+#mainNav .navbar-brand:is(:hover, :focus, :focus-visible) {
+	color: var(--blue-light);
+}
+
+.main-header :is(h1, p) {
+	color: var(--blue);
+}
+
+.main-header__text-box > :first-child {
+	margin-top: 4rem;
+}
+
+.main-header__text-box :is(h1, p) {
+	margin-left: 0.25em;
+}
+
+/* for slashes in "museum/of/candy" */
+.word-slash {
+	position: relative;
+}
+.word-slash::before,
+.word-slash::after {
+	content: '/';
+	color: #ff7487;
+}
+
+/*~ MAIN */
+.section__description {
+	max-width: min(80%, 40ch);
+	text-align: center;
+	margin-top: 0.5em;
+}
+
+/*~ FOOTER */
+.main-footer {
+	margin-top: 6em;
+	margin-bottom: 3em;
+}
+
+.main-footer a {
+	font-size: 1.15rem;
+	color: var(--blue);
+}
+
+.main-footer a:is(:hover, :focus, :focus-visible) {
+	color: var(--blue-light);
+}
+
+.footer__social--link svg {
+	--size: 1.5em;
+	width: var(--size);
+	height: var(--size);
+}
+
+/* scrolling effect on scrollbar */
+.navbar.scrolled {
+	background-color: var(--purple-light);
+	transition: background-color 350ms ease;
+}
+
+/** Media queries */
+/* small screens */
+@media (max-width: 767px) {
+	.section__text-box {
+		padding-block: 6rem !important;
+	}
+
+	.section__description {
+		font-size: 1.25rem;
+	}
+}
+
+/* add a candy icon into section */
+@media (min-width: 992px) {
+	.section__description {
+		position: relative;
+		margin-top: 0;
+		padding-top: 7rem;
+	}
+	.section__description::before {
+		position: absolute;
+		content: '';
+		background-image: url(img/lolli_icon.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+
+		--size: 100px;
+		width: var(--size);
+		aspect-ratio: 1;
+		/* centering a candy */
+		top: 0;
+		right: 50%;
+		transform: translateX(50%);
+	}
+}

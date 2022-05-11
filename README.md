@@ -1,2 +1,6 @@
 # Museum of Candy
-My own site using Bootsrap 5
+I used:
+* Bootsrap 5 
+* custom properties
+* custom scrollbar
+* ::selection 

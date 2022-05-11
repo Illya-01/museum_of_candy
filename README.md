@@ -1,6 +1,10 @@
 # Museum of Candy
-I used:
-* Bootsrap 5 
+## Features:
+* Bootsrap 5
+* responsive design
 * custom properties
+* media-queries
+
+## Additions:
 * custom scrollbar
 * ::selection 

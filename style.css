@@ -29,7 +29,9 @@ p {
 	color: var(--purple-dark);
 }
 
-:is(.navbar-brand, .nav-link, .footer__social--link) {
+.navbar-brand,
+.nav-link,
+.footer__social--link {
 	transition: color 300ms ease-in-out;
 }
 
@@ -48,7 +50,8 @@ a:focus-visible {
 }
 
 /*~ HEADER */
-#mainNav :is(.navbar-brand, .nav-link) {
+#mainNav .navbar-brand,
+#mainNav .nav-link {
 	font-size: 1.5rem;
 	color: var(--white);
 }
@@ -58,11 +61,15 @@ a:focus-visible {
 	letter-spacing: 0.1em;
 }
 
-#mainNav .nav-link:is(:hover, :focus, :focus-visible) {
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus,
+#mainNav .nav-link:focus-visible {
 	color: var(--blue);
 }
 
-#mainNav .navbar-brand:is(:hover, :focus, :focus-visible) {
+#mainNav .navbar-brand:hover,
+#mainNav .nav-link:focus,
+#mainNav .nav-link:focus-visible {
 	color: var(--blue-light);
 }
 
@@ -74,11 +81,13 @@ a:focus-visible {
 	margin-bottom: 1rem;
 }
 
-.main-header :is(h1, p) {
+.main-header h1,
+.main-header p {
 	color: var(--blue);
 }
 
-.main-header__text-box :is(h1, p) {
+.main-header__text-box h1,
+.main-header__text-box p {
 	margin-left: 0.25em;
 }
 
@@ -110,7 +119,9 @@ a:focus-visible {
 	color: var(--blue);
 }
 
-.main-footer a:is(:hover, :focus, :focus-visible) {
+.main-footer a:hover,
+main-footer a:focus,
+main-footer a:focus-visible {
 	color: var(--blue-light);
 }
 

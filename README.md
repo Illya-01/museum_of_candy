@@ -4,10 +4,10 @@
 * responsive design
 * custom properties
 * media-queries
-* pseudo-classes & pseudo-elements
 
 ## Additions:
+* fluid typography
+* * pseudo-classes & pseudo-elements
 * custom scrollbar
 * ::selection 
-* fluid typography
 * transitions

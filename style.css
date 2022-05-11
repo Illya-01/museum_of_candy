@@ -132,7 +132,8 @@ a:focus-visible {
 }
 
 .footer__title {
-	padding-block: 0.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 /* scrolling effect on scrollbar */

@@ -4,6 +4,7 @@
 * responsive design
 * custom properties
 * media-queries
+* pseudo-classes & pseudo-elements
 
 ## Additions:
 * custom scrollbar

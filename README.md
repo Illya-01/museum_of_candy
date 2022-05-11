@@ -10,3 +10,4 @@
 * custom scrollbar
 * ::selection 
 * fluid typography
+* transitions

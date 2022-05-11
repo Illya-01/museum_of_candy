@@ -1,2 +1,15 @@
 # Museum of Candy
-My own site using Bootsrap 5
+## Main:
+* Bootsrap 5
+* responsive design
+* media-queries
+
+## Additions:
+* flexbox model
+* custom properties
+* fluid typography
+* pseudo-classes & pseudo-elements
+* * ::selection 
+* custom scrollbar
+* transitions
+* anchor navigation

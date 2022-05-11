@@ -5,7 +5,7 @@
 * media-queries
 
 ## Additions:
-* flexbox
+* flexbox model
 * custom properties
 * fluid typography
 * pseudo-classes & pseudo-elements

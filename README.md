@@ -8,3 +8,4 @@
 ## Additions:
 * custom scrollbar
 * ::selection 
+* fluid typography

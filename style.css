@@ -131,6 +131,10 @@ main-footer a:focus-visible {
 	height: var(--size);
 }
 
+.footer__title {
+	padding-block: 0.5rem;
+}
+
 /* scrolling effect on scrollbar */
 .navbar.scrolled {
 	background-color: var(--purple-light);

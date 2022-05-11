@@ -68,8 +68,8 @@ a:focus-visible {
 }
 
 #mainNav .navbar-brand:hover,
-#mainNav .nav-link:focus,
-#mainNav .nav-link:focus-visible {
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:focus-visible {
 	color: var(--blue-light);
 }
 
@@ -120,8 +120,8 @@ a:focus-visible {
 }
 
 .main-footer a:hover,
-main-footer a:focus,
-main-footer a:focus-visible {
+.main-footer a:focus,
+.main-footer a:focus-visible {
 	color: var(--blue-light);
 }
 

@@ -2,7 +2,6 @@
 ## Main:
 * Bootsrap 5
 * responsive design
-
 * media-queries
 
 ## Additions:

@@ -1,13 +1,16 @@
 # Museum of Candy
-## Features:
+## Main:
 * Bootsrap 5
 * responsive design
-* custom properties
+
 * media-queries
 
 ## Additions:
+* flexbox
+* custom properties
 * fluid typography
-* * pseudo-classes & pseudo-elements
+* pseudo-classes & pseudo-elements
+* * ::selection 
 * custom scrollbar
-* ::selection 
 * transitions
+* anchor navigation

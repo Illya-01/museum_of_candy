@@ -1,6 +1,6 @@
 # Museum of Candy
 ## Main:
-* Bootsrap 5
+* Bootstrap 5
 * responsive design
 * media-queries
 
@@ -8,8 +8,8 @@
 * flexbox model
 * custom properties
 * fluid typography
-* pseudo-classes & pseudo-elements
-* * ::selection 
+* hover, focus, focus-visible pseudoclasses
+* ::selection pseudo-element
 * custom scrollbar
 * transitions
 * anchor navigation

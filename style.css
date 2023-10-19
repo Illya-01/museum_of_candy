@@ -1,206 +1,202 @@
 /* custom properties */
 :root {
-	--orange: hsl(16, 54%, 89%);
-	--orange-dark: hsl(16, 66%, 86%);
-	--purple: hsl(305, 24%, 60%);
-	--purple-light: hsl(310, 45%, 82%);
-	--purple-dark: hsl(305, 31%, 54%);
-	--white: hsl(0, 0%, 100%);
-	--blue: hsl(205, 100%, 23%);
-	--blue-light: hsl(231, 58%, 65%);
+    --blue: hsl(205, 100%, 23%);
+    --blue-light: hsl(231, 58%, 65%);
+    --purple: hsl(305, 24%, 60%);
+    --purple-light: hsl(310, 45%, 82%);
+    --purple-dark: hsl(305, 31%, 54%);
+    --orange: hsl(16, 54%, 89%);
+    --orange-dark: hsl(16, 66%, 86%);
+    --reddish: hsl(352, 100%, 73%);
+    --white: hsl(0, 0%, 100%);
 }
 
 body {
-	background-color: var(--orange);
-	font-family: 'Nunito';
-	font-weight: 200;
+    background-color: var(--orange);
+    font-family: 'Nunito';
+    font-weight: 200;
 }
 
 h2,
 h3 {
-	color: var(--blue);
-	font-weight: inherit;
+    color: var(--blue);
+    font-weight: inherit;
 }
 
 p {
-	font-size: 1.25rem;
-	font-size: clamp(1.2rem, 0.4rem + 1.6vw, 1.6rem);
-	line-height: 2rem;
-	color: var(--purple-dark);
+    font-size: 1.25rem;
+    font-size: clamp(1.2rem, 0.4rem + 1.6vw, 1.6rem);
+    line-height: 2rem;
+    color: var(--purple-dark);
 }
 
 .navbar-brand,
 .nav-link,
 .footer__social--link {
-	transition: color 300ms ease-in-out;
+    transition: color 150ms ease-in;
 }
 
 a:focus-visible {
-	outline: 2px solid var(--blue);
+    outline: 2px solid var(--blue);
 }
 
 /* get rid of mb on last children */
 * > :last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 ::selection {
-	background-color: var(--purple-dark);
-	color: var(--white);
+    background-color: var(--purple-dark);
+    color: var(--white);
 }
 
 /*~ HEADER */
+/* navbar changes background-color on scrolling */
+#mainNav.scrolled {
+    background-color: var(--purple-light);
+}
+
+#mainNav.scrolled .nav-link {
+    color: var(--white);
+}
+
+#mainNav {
+    transition: background-color 250ms ease-in;
+}
+
 #mainNav .navbar-brand,
 #mainNav .nav-link {
-	font-size: 1.5rem;
-	color: var(--white);
+    font-size: 1.5rem;
+    color: var(--blue);
 }
 
 #mainNav .navbar-brand {
-	color: var(--blue);
-	letter-spacing: 0.1em;
-}
-
-#mainNav .nav-link:hover,
-#mainNav .nav-link:focus,
-#mainNav .nav-link:focus-visible {
-	color: var(--blue);
+    color: var(--blue);
+    letter-spacing: 0.1em;
 }
 
 #mainNav .navbar-brand:hover,
 #mainNav .navbar-brand:focus,
-#mainNav .navbar-brand:focus-visible {
-	color: var(--blue-light);
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus {
+    color: var(--blue-light);
 }
 
 .main-header__text-box > :first-child {
-	margin-top: 3rem;
+    margin-top: 3.5rem;
 }
 
 .main-header__text-box h1 {
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .main-header h1,
 .main-header p {
-	color: var(--blue);
+    color: var(--blue);
 }
 
 .main-header__text-box h1,
 .main-header__text-box p {
-	margin-left: 0.25em;
+    margin-left: 0.25em;
 }
 
 /* for slashes in "museum/of/candy" */
 .word-slash {
-	position: relative;
+    position: relative;
 }
 .word-slash::before,
 .word-slash::after {
-	content: '/';
-	color: #ff7487;
+    content: '/';
+    color: var(--reddish);
 }
 
 /*~ MAIN */
 .section__description {
-	max-width: min(80%, 40ch);
-	text-align: center;
-	margin-top: 0.5em;
+    max-width: min(80%, 40ch);
+    text-align: center;
+    margin-top: 0.5em;
 }
 
 /*~ FOOTER */
 .main-footer {
-	margin-top: 6em;
-	margin-bottom: 3em;
+    margin-top: 6em;
+    margin-bottom: 3em;
 }
 
 .main-footer a {
-	font-size: 1.15rem;
-	color: var(--blue);
+    font-size: 1.15rem;
+    color: var(--blue);
 }
 
 .main-footer a:hover,
-.main-footer a:focus,
-.main-footer a:focus-visible {
-	color: var(--blue-light);
+.main-footer a:focus {
+    color: var(--blue-light);
 }
 
 .footer__social--link svg {
-	--size: 1.5em;
-	width: var(--size);
-	height: var(--size);
+    --size: 1.5em;
+    width: var(--size);
+    height: var(--size);
 }
 
 .footer__title {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-}
-
-/* scrolling effect on scrollbar */
-.navbar.scrolled {
-	background-color: var(--purple-light);
-	transition: background-color 400ms ease;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 /*^ Scrollbar */
 ::-webkit-scrollbar {
-	width: 0.6rem;
+    width: 0.6rem;
 }
 ::-webkit-scrollbar-track {
-	background-color: var(--orange-dark);
-	margin-block: -3px;
+    background-color: var(--orange-dark);
+    margin-block: -3px;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: var(--purple);
-	background-image: linear-gradient(#8b7eb8, var(--purple), #ff9799);
-	border-radius: 100vh;
-}
-::-webkit-scrollbar-thumb:hover {
-	--purple-dark: hsl(305, 37%, 54%);
-	background: var(--purple);
-	background: linear-gradient(to top, #8b7eb8, var(--purple), #ff9799);
+    background-color: var(--purple);
+    background-image: linear-gradient(#8b7eb8, var(--purple), #ff9799);
+    border-radius: 100vh;
 }
 
-/** Media queries */
+/** Media & support queries */
 /* customizing scrollbar in Firefox */
 @supports (scrollbar-color: purple orange) {
-	:root {
-		scrollbar-width: thin;
-		scrollbar-color: var(--purple) var(--orange-dark);
-	}
+    :root {
+        scrollbar-color: var(--purple) var(--orange-dark);
+    }
 }
 
 /* small screens */
 @media (max-width: 767px) {
-	.section__text-box {
-		padding-block: 6rem !important;
-	}
+    .section__text-box {
+        padding-block: 6rem !important;
+    }
 
-	.section__description {
-		font-size: 1.25rem;
-	}
+    .section__description {
+        font-size: 1.25rem;
+    }
 }
 
 /* add a candy icon into section */
 @media (min-width: 992px) {
-	.section__description {
-		position: relative;
-		margin-top: 0;
-		padding-top: 7rem;
-	}
-	.section__description::before {
-		position: absolute;
-		content: '';
-		background-image: url(img/lolli_icon.png);
-		background-position: center center;
-		background-repeat: no-repeat;
+    .section__description {
+        position: relative;
+        margin-top: 0;
+        padding-top: 7rem;
+    }
+    .section__description::before {
+        position: absolute;
+        content: '';
+        background-image: url(img/lolli_icon.png);
+        background-position: center center;
+        background-repeat: no-repeat;
 
-		--size: 100px;
-		width: var(--size);
-		aspect-ratio: 1;
-		/* centering a candy */
-		top: 0;
-		right: 50%;
-		transform: translateX(50%);
-	}
+        --size: 100px;
+        width: var(--size);
+        aspect-ratio: 1;
+        /* centering a candy */
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+    }
 }

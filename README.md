@@ -4,7 +4,7 @@
 * responsive design
 * media-queries
 
-## Additions:
+## Additional:
 * flexbox model
 * custom properties
 * fluid typography
@@ -13,3 +13,4 @@
 * custom scrollbar
 * transitions
 * anchor navigation
+* SVG

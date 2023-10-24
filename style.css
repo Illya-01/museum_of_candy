@@ -50,8 +50,7 @@ a:focus-visible {
     color: var(--white);
 }
 
-/*~ HEADER */
-/* navbar changes background-color on scrolling */
+/* navbar changes on scrolling */
 #mainNav.scrolled {
     background-color: var(--purple-light);
 }
@@ -82,22 +81,9 @@ a:focus-visible {
     color: var(--blue-light);
 }
 
-.main-header__text-box > :first-child {
-    margin-top: 3.5rem;
-}
-
-.main-header__text-box h1 {
-    margin-bottom: 1rem;
-}
-
 .main-header h1,
 .main-header p {
     color: var(--blue);
-}
-
-.main-header__text-box h1,
-.main-header__text-box p {
-    margin-left: 0.25em;
 }
 
 /* for slashes in "museum/of/candy" */
@@ -110,14 +96,12 @@ a:focus-visible {
     color: var(--reddish);
 }
 
-/*~ MAIN */
 .section__description {
     max-width: min(80%, 40ch);
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: 0.75em;
 }
 
-/*~ FOOTER */
 .main-footer {
     margin-top: 6em;
     margin-bottom: 3em;
@@ -134,9 +118,8 @@ a:focus-visible {
 }
 
 .footer__social--link svg {
-    --size: 1.5em;
-    width: var(--size);
-    height: var(--size);
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .footer__title {
@@ -158,7 +141,6 @@ a:focus-visible {
     border-radius: 100vh;
 }
 
-/** Media & support queries */
 /* customizing scrollbar in Firefox */
 @supports (scrollbar-color: purple orange) {
     :root {
@@ -171,10 +153,6 @@ a:focus-visible {
     .section__text-box {
         padding-block: 6rem !important;
     }
-
-    .section__description {
-        font-size: 1.25rem;
-    }
 }
 
 /* add a candy icon into section */
@@ -184,6 +162,7 @@ a:focus-visible {
         margin-top: 0;
         padding-top: 7rem;
     }
+
     .section__description::before {
         position: absolute;
         content: '';
@@ -191,9 +170,9 @@ a:focus-visible {
         background-position: center center;
         background-repeat: no-repeat;
 
-        --size: 100px;
-        width: var(--size);
+        width: 7rem;
         aspect-ratio: 1;
+
         /* centering a candy */
         top: 0;
         right: 50%;

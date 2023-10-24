@@ -42,13 +42,14 @@
       </nav>
 
       <section class="main-header__text-box | container-fluid px-0 row g-0">
-         <div class="col-lg d-none d-lg-block">
-            <h1 class="display-4 text-uppercase">Museum<span class="word-slash">of</span>candy</h1>
-            <p class="display-4 text-uppercase">Museum<span class="word-slash">of</span>candy</p>
-            <p class="display-4 text-uppercase">Museum<span class="word-slash">of</span>candy</p>
-            <p class="display-4 text-uppercase">Museum<span class="word-slash">of</span>candy</p>
-            <p class="display-4 text-uppercase">Museum<span class="word-slash">of</span>candy</p>
-            <p class="display-4 text-uppercase">Museum<span class="word-slash">of</span>candy</p>
+         <div class="col-lg d-none d-lg-block my-auto text-xl-center">
+            <h1 class="display-5 text-uppercase ms-3 ms-xl-0 my-3">Museum<span class="word-slash">of</span>candy
+            </h1>
+            <p class="display-5 text-uppercase ms-3 ms-xl-0">Museum<span class="word-slash">of</span>candy</p>
+            <p class="display-5 text-uppercase ms-3 ms-xl-0">Museum<span class="word-slash">of</span>candy</p>
+            <p class="display-5 text-uppercase ms-3 ms-xl-0">Museum<span class="word-slash">of</span>candy</p>
+            <p class="display-5 text-uppercase ms-3 ms-xl-0">Museum<span class="word-slash">of</span>candy</p>
+            <p class="display-5 text-uppercase ms-3 ms-xl-0">Museum<span class="word-slash">of</span>candy</p>
          </div>
          <div class="col-lg">
             <img class="img-fluid" src="img/hand2.png" alt="a hand with a donut">
@@ -60,7 +61,7 @@
    <main class="container-fluid px-0">
       <section id="about" class="row g-0">
          <div
-            class="section__text-box	 col-md d-flex flex-column justify-content-center align-items-center py-5 py-md-0 order-md-last">
+            class="section__text-box | col-md d-flex flex-column justify-content-center align-items-center py-5 py-md-0 order-md-last">
             <h2 class="text-uppercase">About museum</h2>
             <p class="section__description">
                What if an eccentric chocolatier and a daredevil pop star had a whirlwind romance, got married while
@@ -156,26 +157,26 @@
       <h3 class="footer__title col d-flex justify-content-center align-items-center text-center text-uppercase">
          Museum<span class="word-slash">of</span>candy
       </h3>
-      </fo>
+   </footer>
 
 
 
-      <!-- Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-         </script>
-      <!-- Jquery -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-
-      <!-- my script for scrollbar :) -->
-      <script>
-         $(function () {
-            $(document).scroll(function () {
-               var $nav = $("#mainNav");
-               $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            });
-         });
+   <!-- Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
       </script>
+   <!-- Jquery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+
+   <!-- my script for scrollbar :) -->
+   <script>
+      $(function () {
+         $(document).scroll(function () {
+            var $nav = $("#mainNav");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+         });
+      });
+   </script>
 </body>
 
 </html>

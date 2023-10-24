@@ -4,7 +4,10 @@
 <head>
    <!-- Required meta tags -->
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <meta name="description"
+      content="Project Museum of Candy with responsive web design, accessible colors and animation">
 
    <!-- Google Font -->
    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
@@ -24,8 +27,8 @@
 
 <body>
    <header id="home" class="main-header">
-      <nav id="mainNav" class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-3	">
-         <a href="" class="navbar-brand text-uppercase py-2 me-5">Candy</a>
+      <nav id="mainNav" class="navbar navbar-expand-md navbar-dark fixed-top py-0 px-3" aria-label="Primary">
+         <a href="#" class="navbar-brand text-uppercase py-2 me-5">Candy</a>
 
          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-links"
             aria-label="Toggle navigation">
@@ -52,7 +55,8 @@
             <p class="display-5 text-uppercase ms-3 ms-xl-0">Museum<span class="word-slash">of</span>candy</p>
          </div>
          <div class="col-lg">
-            <img class="img-fluid" src="img/hand2.png" alt="a hand with a donut">
+            <img class="img-fluid" src="img/hand2.webp" width="1000px" height="1000px" loading="lazy"
+               alt="hand with a donut">
          </div>
       </section>
    </header>
@@ -72,7 +76,8 @@
          </div>
 
          <div class="col-md">
-            <img class="img-fluid" src="img/milk.png" alt="donuts on milk bottles">
+            <img class="img-fluid" src="img/milk.webp" width="800px" height="800px" loading="lazy"
+               alt="donuts, placed on milk bottles">
          </div>
       </section>
 
@@ -90,7 +95,8 @@
          </div>
 
          <div class="col-md">
-            <img class="img-fluid" src="img/gumball.png" alt="candy machine">
+            <img class="img-fluid" src="img/gumball.webp" width="800px" height="800px" loading="lazy"
+               alt="candy machine">
          </div>
       </section>
 
@@ -107,21 +113,22 @@
          </div>
 
          <div class="col-md">
-            <img class="img-fluid" src="img/sprinkles.png" alt="sprinkles inside a cocktail glass">
+            <img class="img-fluid" src="img/sprinkles.webp" width="800px" height="800px" loading="lazy"
+               alt="sprinkles inside a cocktail glass">
          </div>
       </section>
    </main>
 
 
    <footer
-      class="main-footer		container-fluid px-0 d-flex flex-column flex-md-row justify-content-md-between g-0 gap-3 gap-md-0">
-      <ul class="footer__nav nav col justify-content-center align-items-center" role="navigation">
+      class="main-footer | container-fluid px-0 d-flex flex-column flex-md-row justify-content-md-between g-0 gap-3 gap-md-0">
+      <ul class="footer__nav nav col justify-content-center align-items-center" aria-label="Primary navigation">
          <li class="nav-item"><a class="nav-link active text-uppercase" href="#home">Home</a></li>
          <li class="nav-item"><a class="nav-link text-uppercase" href="#about">About</a></li>
          <li class="nav-item"><a class="nav-link text-uppercase" href="#ticktes">Tickets</a></li>
       </ul>
 
-      <ul class="footer__social nav col justify-content-center align-items-center" role="navigation">
+      <ul class="footer__social | nav col justify-content-center align-items-center" aria-label="Social navigation">
          <li class="nav-item">
             <a class="footer__social--link	 nav-link active text-uppercase" href="https://www.instagram.com/"
                aria-label="Instagram">
@@ -133,7 +140,7 @@
             </a>
          </li>
          <li class="nav-item">
-            <a class="footer__social--link	 nav-link text-uppercase" href="https://www.facebook.com/"
+            <a class="footer__social--link | nav-link text-uppercase" href="https://www.facebook.com/"
                aria-label="Facebook">
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
                   viewBox="0 0 16 16">
@@ -143,7 +150,7 @@
             </a>
          </li>
          <li class="nav-item">
-            <a class="footer__social--link	 nav-link text-uppercase" href="https://www.twitter.com/"
+            <a class="footer__social--link | nav-link text-uppercase" href="https://www.twitter.com/"
                aria-label="Twitter">
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
                   viewBox="0 0 16 16">
@@ -154,7 +161,7 @@
          </li>
       </ul>
 
-      <h3 class="footer__title col d-flex justify-content-center align-items-center text-center text-uppercase">
+      <h3 class="footer__title | col d-flex justify-content-center align-items-center text-center text-uppercase">
          Museum<span class="word-slash">of</span>candy
       </h3>
    </footer>

@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-   <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,13 +9,14 @@
       content="Project Museum of Candy with responsive web design, accessible colors and animation">
 
    <!-- Google Font -->
-   <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
 
    <!-- Bootstrap CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-   <!-- Custom CSS -->
    <link rel="stylesheet" href="style.css">
 
    <!-- Favicon -->
@@ -55,8 +55,11 @@
             <p class="display-5 text-uppercase ms-3 ms-xl-0">Museum<span class="word-slash">of</span>candy</p>
          </div>
          <div class="col-lg">
-            <img class="img-fluid" src="img/hand2.webp" width="1000px" height="1000px" loading="lazy"
-               alt="hand with a donut">
+            <img class="img-fluid" src="img/hand.webp" srcset="
+               img/hand_400.webp 400w, 
+               img/hand_800.webp 768w,
+               img/hand_1000.webp 992w
+               " alt="hand with a donut">
          </div>
       </section>
    </header>
@@ -76,8 +79,10 @@
          </div>
 
          <div class="col-md">
-            <img class="img-fluid" src="img/milk.webp" width="800px" height="800px" loading="lazy"
-               alt="donuts, placed on milk bottles">
+            <img class="img-fluid" src="img/milk.webp" srcset="
+            img/milk_400.webp 400w, 
+            img/milk_800.webp 768w
+            " loading="lazy" alt="donuts, placed on milk bottles">
          </div>
       </section>
 
@@ -95,8 +100,10 @@
          </div>
 
          <div class="col-md">
-            <img class="img-fluid" src="img/gumball.webp" width="800px" height="800px" loading="lazy"
-               alt="candy machine">
+            <img class="img-fluid" src="img/gumball.webp" srcset="
+            img/gumball_400.webp 400w, 
+            img/gumball_800.webp 768w
+            " loading="lazy" alt="candy machine">
          </div>
       </section>
 
@@ -113,8 +120,10 @@
          </div>
 
          <div class="col-md">
-            <img class="img-fluid" src="img/sprinkles.webp" width="800px" height="800px" loading="lazy"
-               alt="sprinkles inside a cocktail glass">
+            <img class="img-fluid" src="img/sprinkles.webp" srcset="
+            img/sprinkles_400.webp 400w, 
+            img/sprinkles_800.webp 768w
+            " loading="lazy" alt="sprinkles inside a cocktail glass">
          </div>
       </section>
    </main>
@@ -167,22 +176,16 @@
    </footer>
 
 
-
    <!-- Bootstrap Bundle with Popper -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
       </script>
-   <!-- Jquery -->
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
 
-   <!-- my script for scrollbar :) -->
    <script>
-      $(function () {
-         $(document).scroll(function () {
-            var $nav = $("#mainNav");
-            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-         });
-      });
+      window.addEventListener('scroll', () => {
+         const nav = document.querySelector('#mainNav')
+         nav.classList.toggle('scrolled', window.scrollY > nav.clientHeight)
+      })
    </script>
 </body>
 

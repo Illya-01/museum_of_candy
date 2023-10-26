@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--orange);
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     font-weight: 200;
 }
 

@@ -1,4 +1,5 @@
-# Museum of Candy
+# Improved version of Museum of Candy
+
 ## Main:
 * Bootstrap 5
 * responsive design
